@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<dts>
+		<d>
+			<ten>Điện thoại Samsung Galaxy A52 128GB </ten>
+			<gia>24990000</gia>
+			<giamgia>6</giamgia>
+			<anh>image/opporeno7.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg</links>
+			<tieude>Samsung Galaxy S22 Ultra 256GB - Mang trong mình những nâng cấp hiện đại bậc nhất năm 2022.</tieude>
+			<nd>Samsung Galaxy S22 Ultra 256GB trình làng với những tính năng cao cấp cũng như hiệu suất hoạt động đến từ bộ vi xử lý cực kỳ hiện đại, kết hợp song song là ngoại hình nâng vẻ đẹp đẳng cấp, thượng lưu cho bất cứ ai sở hữu chiếc smartphone này. Thiết kế “chanh sả” ngút ngàn
+Samsung Galaxy S22 Ultra 256GB được chế tác có hình dáng vuông vức và có thể nói là cứng cáp hơn so với dòng Galaxy S21 tiền nhiệm, độ dày và cạnh vuông nhô ra hơn và chúng trông “na ná” với dòng điện thoại Galaxy Note, nhưng bạn vẫn có thể nhìn ra ngay điểm khác biệt giữa những dòng smartphone này. Điện thoại Galaxy S22 Ultra 256GB có kích thước mỏng với viền bezel cực mỏng, khiến cho độ lớn của màn hình chính tràn ra gần như 100%, hơi cong một chút đem làm tầm nhìn bao quát, trọn vẹn nhất khi sử dụng. Không những vậy, thiết kế mặt khung của thiết bị cũng đem lại cảm giác cầm nắm nhẹ nhàng, thoải mái không bị cấn tay.</nd>
+			<manhinh>AMOlED, 6.43", Full HD+</manhinh>
+			<hdh>Android 12</hdh>
+			<camsau>Chính 64 MP, Phụ 2 MP, 2 MP</camsau>
+			<camtruoc>32MP</camtruoc>
+			<cpu>Snapdrangon 680 8 nhân</cpu>
+			<ram>8 GB</ram>
+			<rom>128 GB</rom>
+			<bonhongoai>Hổ trợ khe cắm thẻ nhớ 1TB</bonhongoai>
+			<sim>2 Nano SIM, 4G</sim>
+			<pin>4500 mAh, 33 W</pin>
+			<ngay>6</ngay>
+			<thang>5</thang>
+			<nam>2022</nam>
+			<gio>8</gio>
+			<phut>10</phut>
+			<giay>0</giay>
+		</d>
+		<d>
+			<ten>Ho wuay</ten>
+			<gia>20990000</gia>
+			<giamgia>10</giamgia>
+			<anh>image/dt4.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+			
+		</d>
+		<d>
+			<ten>opppo new abstract</ten>
+			<gia>14990000</gia>
+			<giamgia>8</giamgia>
+			<anh>image/download.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+		</d>
+		<d>
+			<ten>ok la</ten>
+			<gia>16990000</gia>
+			<giamgia>5</giamgia>
+			<anh>image/Dt2.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+		</d>
+		<d>
+			<ten>DT5</ten>
+			<gia>23990000</gia>
+			<giamgia>11</giamgia>
+			<anh>image/dt3.jpg</anh>
+			<links> image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+		</d>
+		<d>
+			<ten>NOKIA pro lay xơ</ten>
+			<gia>40990000</gia>
+			<giamgia>15</giamgia>
+			<anh>image/dd4.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+		</d>
+		<d>
+			<ten>NOKIA pro lay xơ</ten>
+			<gia>40990000</gia>
+			<giamgia>15</giamgia>
+			<anh>image/dd4.jpg</anh>
+			<links>image/opporeno7.jpg image/dt4.jpg image/dt3.jpg image/Dt2.jpg image/download.jpg </links>
+		</d>
+	</dts>

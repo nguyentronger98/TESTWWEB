@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	 <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.1.1-web/css/all.min.css">
+	  <script src="./home.js"></script>
+	<style>
+		#anh{
+			width: 500px;
+			height: 500px;
+			background-color: aliceblue;
+		}
+		.anh
+		{
+			margin: 35px 15px 0px 17px;
+		}
+		.hv:hover
+		{
+			margin: 25px 15px 10px 17px;
+		}
+		.card
+		{
+			width: 20%; height: 400px; border: 1px solid #D0C9C9; float: left;
+		}
+		.xoa
+		{
+			text-decoration: none;
+			color:#000000;
+		}
+		.gian
+		{
+			margin:0px 10px;
+		}
+		.hv img
+		{
+			width: 100%;
+			height: 220px;
+		}
+		.gian li a
+		{
+			text-decoration: line-through; color: #828282;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width: 1260px; margin: 0px auto; border: 1px solid  #FF0004">
+		<script type="text/javascript">
+			var xml = new XMLHttpRequest();
+			xml.open('GET','xiaomi.xml',false);
+			xml.send();
+			var xmlDate = xml.responseXML;
+			if(!xmlDate)
+				{
+					xmlDate=(new DOMParser()).parseFromString(xml.responseText,'text/xml');
+				}
+			const DTS = xmlDate.getElementsByTagName("d");
+			for(i=0;i<DTS.length;i++)
+				{
+					var xmlten= DTS[i].getElementsByTagName("ten")[0].childNodes[0].nodeValue;
+					var xmllink=DTS[i].getElementsByTagName("anh")[0].childNodes[0].nodeValue;
+					var xmlgia = DTS[i].getElementsByTagName("gia")[0].childNodes[0].nodeValue;
+					var xmlgg = DTS[i].getElementsByTagName("giamgia")[0].childNodes[0].nodeValue;
+					var giaban = xmlgia - (xmlgia*xmlgg /100);
+					var gb = giaban.toLocaleString('de-DE');
+					document.write('<a href="#" onClick="ChuyenTrangChiTiet(' + i + ')" class="xoa"> <div class="card"> <div class="hv anh"> <img src=' + xmllink + '></div> <div class="silder-product-one-content-item-text gian"><li >'+ xmlten + '</li><li></li><li style="color: red; font-size: 20px; " >' + gb + 'đ</li> <li><a >'+ xmlgia + '<sup>đ</sup></a><span > -' + xmlgg + '%</span></li></div></div></a>');	
+				}
+			
+			function ChuyenTrangChiTiet(vt)
+			{
+				sessionStorage.link = DTS[vt].getElementsByTagName("anh")[0].childNodes[0].nodeValue;
+				sessionStorage.ten = DTS[vt].getElementsByTagName("ten")[0].childNodes[0].nodeValue;
+				sessionStorage.gia = DTS[vt].getElementsByTagName("gia")[0].childNodes[0].nodeValue;
+				sessionStorage.gg = DTS[vt].getElementsByTagName("giamgia")[0].childNodes[0].nodeValue;
+				sessionStorage.giaban = sessionStorage.gia - (sessionStorage.gia*sessionStorage.gg /100);
+				sessionStorage.links=DTS[vt].getElementsByTagName("links")[0].childNodes[0].nodeValue;
+				sessionStorage.nd=DTS[vt].getElementsByTagName("nd")[0].childNodes[0].nodeValue;
+				sessionStorage.tieude=DTS[vt].getElementsByTagName("tieude")[0].childNodes[0].nodeValue;
+				sessionStorage.manhinh=DTS[vt].getElementsByTagName("manhinh")[0].childNodes[0].nodeValue;
+				sessionStorage.hdh=DTS[vt].getElementsByTagName("hdh")[0].childNodes[0].nodeValue;
+				sessionStorage.camsau=DTS[vt].getElementsByTagName("camsau")[0].childNodes[0].nodeValue;
+				sessionStorage.camtruoc=DTS[vt].getElementsByTagName("camtruoc")[0].childNodes[0].nodeValue;
+				sessionStorage.cpu=DTS[vt].getElementsByTagName("cpu")[0].childNodes[0].nodeValue;
+				sessionStorage.ram=DTS[vt].getElementsByTagName("ram")[0].childNodes[0].nodeValue;
+				sessionStorage.rom=DTS[vt].getElementsByTagName("rom")[0].childNodes[0].nodeValue;
+				sessionStorage.bonhongoai=DTS[vt].getElementsByTagName("bonhongoai")[0].childNodes[0].nodeValue;
+				sessionStorage.sim=DTS[vt].getElementsByTagName("sim")[0].childNodes[0].nodeValue;
+				sessionStorage.pin=DTS[vt].getElementsByTagName("pin")[0].childNodes[0].nodeValue;
+				sessionStorage.nam=DTS[vt].getElementsByTagName("nam")[0].childNodes[0].nodeValue;
+				sessionStorage.thang=DTS[vt].getElementsByTagName("thang")[0].childNodes[0].nodeValue;
+				sessionStorage.ngay=DTS[vt].getElementsByTagName("ngay")[0].childNodes[0].nodeValue;
+				sessionStorage.gio=DTS[vt].getElementsByTagName("gio")[0].childNodes[0].nodeValue;
+				sessionStorage.phut=DTS[vt].getElementsByTagName("phut")[0].childNodes[0].nodeValue;
+				sessionStorage.giay=DTS[vt].getElementsByTagName("giay")[0].childNodes[0].nodeValue;
+				location.assign("ChiTietSanPham.html");
+				
+			}
+		</script>
+		<div style="clear: both;"></div>
+	</div>
+</body>
+</html>
